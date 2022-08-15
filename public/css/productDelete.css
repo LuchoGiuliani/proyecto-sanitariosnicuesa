@@ -1,0 +1,58 @@
+/*---------------FONDO -----------*/      
+#fondo{
+    background-color: #EDEDED;
+    border-radius: 2em;
+    box-shadow: 0px 1px 6px -1px rgb(0 0 0 / 75%);
+  width: 100%;
+  max-width: 600px;
+  margin: auto;   
+   margin-top: 100px;
+
+}
+
+#fondo h4 {
+    text-align: center;
+    padding: 25px;
+}
+#fondo img {
+    border: var(--color-grey) solid 0.1em;
+    border-radius: 1.5em;
+    height: 450px;
+    display: flex;
+    min-width: 150px;
+    background-color: white;
+    margin: 1em auto;
+    max-height: 250px;
+}
+
+/*---------------BOTONES -----------*/
+#boton {
+    padding: 0 1.5em 1.5em 1.5em ;
+    display: flex;
+    justify-content: space-around;
+}
+.cancelar {
+    background-color: #A5A1A7;
+    margin: 13px;
+    padding: 13px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0px 1px 6px -1px rgb(0 0 0 / 75%);
+    font-size: 1em;
+    width: 60px;
+}
+
+.borrar {
+    background-color: var(--color-footerNav);
+    color: white;
+    margin: 13px;
+    padding: 13px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0px 1px 6px -1px rgb(0 0 0 / 75%);
+    font-size: 1em;
+    width: 60px;
+
+}

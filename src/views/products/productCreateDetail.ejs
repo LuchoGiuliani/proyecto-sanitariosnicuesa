@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../includes/head.ejs') %>
+        <script defer src="/scripts/menuCrear.js"></script>
+</head>
+
+<body>
+    <%- include ('../includes/header.ejs') %>
+
+        <main>
+            <section class="back">
+                <form action="/products/save" method="post" enctype="multipart/form-data">
+                    <div class="formulario">
+                        <h2 id="detalle">
+                            Crear un nuevo producto
+                        </h2>
+
+                        <!-- <h2> categorias</h2> -->
+                        <label for="Categoria">Categoria</label>
+                        <select id="categoria" name="categoria" class="formulario_relleno" onchange="populate()" >
+                 
+                            <option value=""></option>
+                            <option value="baño">baño</option>
+                            <option value="cocina">cocina</option>
+                            <option value="tanques">tanques</option>
+                            <!--    <option value="calefaccion">calefacción</option>
+                                <option value="instalaciones">instalaciones</option>  -->
+                        </select>  <% if ( locals.errors && errors.categoria ) { %>
+                            <p class="msg-error">
+                                <%= errors.categoria.msg %>
+                            </p>
+                            <% } %>
+                        <label for="subCategoria">SubCategoria</label>
+                        <select id="subCategoria" name="subCategoria" class="formulario_relleno"></select>
+                        <% if ( locals.errors && errors.subCategoria ) { %>
+                            <p class="msg-error">
+                                <%= errors.subCategoria.msg %>
+                            </p>
+                            <% } %>
+
+                        <!-- producto -->
+                        <h2 class="titulo">Producto</h2>
+                        <label for="nombre-producto">* Nombre del producto</label>
+                        <input class="formulario_relleno" type="text" name="nombreProducto" id="nombreProducto"
+                            value="<%= locals.oldData ? oldData.nombreProducto: null %>">
+                        <% if ( locals.errors && errors.nombreProducto ) { %>
+                            <p class="msg-error">
+                                <%= errors.nombreProducto.msg %>
+                            </p>
+                            <% } %>
+                            <label for="marca">* Marca</label>
+                            <input class="formulario_relleno" type="text" name="marca" id="marca" min="1" 
+                            value="<%= locals.oldData ? oldData.marca: null %>">
+                            <% if ( locals.errors && errors.marca ) { %>
+                                <p class="msg-error">
+                                    <%= errors.marca.msg %>
+                                </p>
+                                <% } %> 
+                        <label class="infodenombres" for="imagenProducto">* Imagen del producto</label>
+                        <input class="formulario_relleno" type="file" name="imagenProducto"
+                        <% if (locals.errors && errors.imagenProducto) { %>
+                            <p class="msg-error"> <%= errors.imagenProducto.msg %> </p>
+                        <% } %>
+                        <label for="descripcion">Descripcion</label>
+                        <textarea class="descripcion" name="description" > </textarea>
+                        <label for="price">* Precio</label>
+                        <input class="formulario_relleno" type="number" name="price" id="price" min="1" 
+                        value="<%= locals.oldData ? oldData.price: null %>">
+                        <% if ( locals.errors && errors.price ) { %>
+                            <p class="msg-error">
+                                <%= errors.price.msg %>
+                            </p>
+                            <% } %>
+
+                        <!-- informacion -->
+                        <h2 class="titulo">Información</h2>
+                        <label for="tecnologia">Tecnologia</label>
+                        <input class="formulario_relleno" type="text" name="Tecnologia" id="subCategoria" min="1" />
+                        <label class="infodenombres" for="Linea">Linea</label>
+                        <input class="formulario_relleno" type="text" name="linea" min="1" />
+                        <label class="infodenombres" for="Modelo">Modelo</label>
+                        <input class="formulario_relleno" type="text" name="modelo" min="1" >
+                        <label class="infodenombres" for="Colores">Colores</label>
+                        <input class="formulario_relleno" type="text" name="colores" min="1" />
+                        <label class="infodenombres" for="Diseño">Diseño</label>
+                        <input class="formulario_relleno" type="text" name="design" min="1" />
+                        <label class="infodenombres" for="Apto">Apto</label>
+                        <input class="formulario_relleno" type="text" name="apto" min="1" />
+                        <label class="infodenombres" for="Apto">Configuracion</label>
+                        <input class="formulario_relleno" type="text" name="configuracion" min="1" />
+                        <label for="nombre-apellido" for="medidas">Medidas</label>
+                        <input class="formulario_relleno" type="text" name="medidas" min="1" />
+
+                        <label for="nombre-apellido" for="capacidad">Capacidad</label>
+                        <input class="formulario_relleno" type="text" name="capacidad" min="1">
+
+
+
+
+                                <!-- detalles -->
+                                <!-- <h2 class="titulo">Detalles</h2> -->
+                                <!--
+                        <label for="nombre-apellido">Documento</label>
+                        <input class="formulario_relleno" type="file" name="documento" />
+                        <label class="infodenombres" for="grafico">Grafico</label>
+                        <input class="formulario_relleno" type="file" name="grafico" min="1" />
+                        <label class="infodenombres" for="esquema">Esquema</label>
+                        <input class="formulario_relleno" type="file" name="esquema">  -->
+                                <div id="boton">
+                                    <button type="reset" class="Cancelar">Reiniciar</button>
+                                    <button type="submit" class="botonform">Crear</button>
+                                </div>
+                    </div>
+                </form>
+            </section>
+
+
+
+        </main>
+        <%- include ('../includes/footer.ejs') %>
+            <script src="../../scripts/menu.js"></script>
+</body>

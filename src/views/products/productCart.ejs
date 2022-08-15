@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include ('../includes/header.ejs') %>
+        <!-- break  -->
+        <main>
+            <!--   <div id="ruta">
+                    <h6 class="texto">productos - baño - griferia -</h6>
+                    <h6 class="ruta__texto ruta__texto--resaltado"> H3 Urbano</h6>
+                </div>-->
+            <section id="pagina">
+                <h2 id="pagina__titulo">Carrito de Compras</h2>
+                <section id="productos">
+                    <article class="productos__articulo">
+                        <h3 id="articulo__titulo">Bidet 1</h3>
+                        <div class="articulo__contenedor">
+                            <figure class="articulo__imagen"><img src="/images/bidet1.png" alt=""></figure>
+                            <div class="articulo__informacion">
+                                <h3>$21.599</h3>
+                                <h5>Cantidad:</h5>
+                                <div class="articulo__cantidad">
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">-</a>
+                                    </button>
+                                    <a class="articulo__cantidadTexto">2</a>
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">+</a>
+                                    </button>
+                                </div>
+                                <h5>Total:</h5>
+                                <h3 class="--bold">$43.198</h3>
+                            </div>
+                        </div>
+                        <button class="quitar"><i class="fa-solid fa-trash"></i></button>
+                    </article>
+                    <article class="productos__articulo">
+                        <h3 id="articulo__titulo">Bidet 1</h3>
+                        <div class="articulo__contenedor">
+                            <figure class="articulo__imagen"><img src="/images/bidet1.png" alt=""></figure>
+                            <div class="articulo__informacion">
+                                <h3>$21.599</h3>
+                                <h5>Cantidad:</h5>
+                                <div class="articulo__cantidad">
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">-</a>
+                                    </button>
+                                    <a class="articulo__cantidadTexto">2</a>
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">+</a>
+                                    </button>
+                                </div>
+                                <h5>Total:</h5>
+                                <h3 class="--bold">$43.198</h3>
+                            </div>
+                        </div>
+                        <button class="quitar"><i class="fa-solid fa-trash"></i></button>
+                    </article>
+                    <article class="productos__articulo">
+                        <h3 id="articulo__titulo">Bidet 1</h3>
+                        <div class="articulo__contenedor">
+                            <figure class="articulo__imagen"><img src="/images/bidet1.png" alt=""></figure>
+                            <div class="articulo__informacion">
+                                <h3>$21.599</h3>
+                                <h5>Cantidad:</h5>
+                                <div class="articulo__cantidad">
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">-</a>
+                                    </button>
+                                    <a class="articulo__cantidadTexto">2</a>
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">+</a>
+                                    </button>
+                                </div>
+                                <h5>Total:</h5>
+                                <h3 class="--bold">$43.198</h3>
+                            </div>
+                        </div>
+                        <button class="quitar"><i class="fa-solid fa-trash"></i></button>
+                    </article>
+                    <article class="productos__articulo">
+                        <h3 id="articulo__titulo">Bidet 1</h3>
+                        <div class="articulo__contenedor">
+                            <figure class="articulo__imagen"><img src="/images/bidet1.png" alt=""></figure>
+                            <div class="articulo__informacion">
+                                <h3>$21.599</h3>
+                                <h5>Cantidad:</h5>
+                                <div class="articulo__cantidad">
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">-</a>
+                                    </button>
+                                    <a class="articulo__cantidadTexto">2</a>
+                                    <button class="articulo__cantidadBoton">
+                                        <a class="articulo__cantidadTexto">+</a>
+                                    </button>
+                                </div>
+                                <h5>Total:</h5>
+                                <h3 class="--bold">$43.198</h3>
+                            </div>
+                        </div>
+                        <button class="quitar"><i class="fa-solid fa-trash"></i></button>
+                    </article>
+                </section>
+                <section id="compra">
+                    <article id="compra__envio">
+                        <div class="compra__envioValor">
+                            <h3 class="--bold">Valor Productos</h3>
+                            <h3>$129.594</h3>
+                        </div>
+                        <form id="compra__form" action="POST">
+                            <h3 class="compra__titulo --bold">Envio</h3>
+                            <div id="compra__opcionesEnvio">
+                                <label for="envio">
+                                    <h3>Retiro por Local</h3> <input class="radio" type="radio" id="retiro_local"
+                                        name="envio" value="retiro_local">
+                                </label>
+                                <label for="envio">
+                                    <h3>Retiro por correo </h3><input class="radio" type="radio" id="retiro_local"
+                                        name="envio" value="retiro_correo">
+                                </label>
+                                <label for="envio">
+                                    <h3>Envío por correo</h3> <input class="radio" type="radio" id="retiro_local"
+                                        name="envio" value="envio_correo">
+                                </label>
+                            </div>
+                            <label for="envio">Direccion</label>
+                            <input class="compra__datosEnvio" type="text" id="direccion" name="direccion">
+                            <label for="codigoPostal">CP</label>
+                            <div id="compra__cp">
+                                <input class="compra__datosEnvio" type="text" id="codigoPostal" name="codigoPostal">
+                                <label id="compra__datosEnvio">
+                                    <h5>Te llega el viernes
+                                        22 de Agosto de 2022</h5>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="compra__envioValor">
+                            <h3 class="--bold">Valor Envío</h3>
+                            <h3>$857</h3>
+                        </div>
+                        <div id="compra__envioValorTotal">
+                            <h3 class="--bold">Valor Total</h3>
+                            <h3>$130.451</h3>
+                        </div>
+
+                    </article>
+                    <article id="compra__pago">
+                        <h3 class="pago__texto --bold">Pago</h3>
+                        <figure class="mp_api"><img src="/images/mp-api.png" alt=""></figure>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <!-- break -->
+        <%- include ('../includes/footer.ejs') %>
+
+            <script src="./scripts/menu.js"></script>
+</body>
+
+</html>

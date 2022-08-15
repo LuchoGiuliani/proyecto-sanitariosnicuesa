@@ -1,0 +1,14 @@
+@media (max-width: 768px) { 
+  
+    #producto {
+        flex-wrap: wrap;
+    }
+    #producto__informacion {
+        max-width: none;
+    }
+    #producto__titulo {
+        text-align: center;
+        margin:auto;
+        margin-top: 1em;
+    }
+}

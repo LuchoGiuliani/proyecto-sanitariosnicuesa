@@ -1,0 +1,21 @@
+@media (max-width: 480px) {
+    main h6 {
+        display: none;
+    }
+
+    #pagina__titulo {
+        margin-top: 0px;
+    }
+
+    #pagina {
+        display: block;
+    }
+
+    #pagina section {
+        width: 100%;
+    }
+
+    #compra__envio {
+        margin-top: 1em;
+    } 
+}

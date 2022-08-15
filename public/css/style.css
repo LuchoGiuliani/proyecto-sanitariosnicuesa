@@ -1,0 +1,80 @@
+/*---------------ROOT COLORS/FONTS-----------*/
+:root {
+    --color-footerNav: #3A687E;
+    --color-font: rgb(22, 20, 20);
+    --color-hover: #24d6ed;
+    --color-white: rgb(239, 245, 244);
+    --color-grey: rgb(190, 185, 185);
+    --font-family: 'Sarabun', sans-serif;
+}
+
+/*---------------ESTILOS GENERALES-----------*/
+
+*{
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    
+
+
+}
+
+body {
+    font-family: var(--font-family)
+}
+
+main {
+    /* v total de altura - header que es 80px */
+    min-height: calc(100vh - 80px); 
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.3em;  
+    color: var(--color-font);
+}
+
+h3 {
+    font-size: 1.3em;
+    color: var(--color-font);  
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: var(--color-font);
+    padding-bottom: 0.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.6em;
+}
+
+/*---------------ESTILOS GENERALES-----------*/
+
+.msg-error {
+    color: red;
+    font-size: .8em;
+    /* margin-top: -0.5em; */
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    /* text-align: center; */
+}

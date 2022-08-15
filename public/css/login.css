@@ -1,0 +1,82 @@
+/*---------------LOGIN -----------*/
+
+#section {
+  padding: 30px;
+  justify-content: center;
+  margin: 1em auto 2em;
+  border-radius: 1em;
+  background-color: #ededed;
+  max-width: 500px;
+  box-shadow: 0px 1px 6px -1px rgb(0 0 0 / 75%);
+}
+
+
+#titulo {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#login__form input {
+  display: block;
+  padding: 5px;
+
+  border-radius: 5px;
+  margin: 0.5em 0;
+  box-shadow: 0px 1px 6px -1px rgb(0 0 0 / 75%);
+}
+
+#login__boton {
+  padding: 1em;
+  background-color: #3a687e;
+  border-radius: 1em;
+  margin: 1em 0;
+}
+
+#login__boton h4 {
+  color: white;
+}
+
+/*---------------RECORDARME -----------*/
+
+#recordarme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+#recordarme__titulo {
+  font-weight: 200;
+  text-decoration: underline;
+  color: black;
+}
+
+/*---------------REGISTER -----------*/
+
+#registro {
+  border-top: 1px #667 solid;
+  padding-top: 2em;
+  display: block;
+}
+
+#registro__parrafo {
+  font-weight: normal;
+  max-width: 300px;
+  margin-bottom: 1em;
+}
+
+#registro__boton {
+  display: block;
+}
+
+#registro__textoBoton {
+  display: block;
+  padding: 1em;
+  background-color: #667;
+  color: white;
+  border-radius: 1em;
+  margin-top: 1em;
+  width: fit-content;
+  font-weight: normal;
+}

@@ -1,0 +1,74 @@
+<header>
+    <section id="headerContainer">
+        <div class="navbar_left">
+            <nav id="navbar">
+                <figure class="navbar__toggle" id="mobile-menu">
+                    <span id="bar"></span>
+                    <span id="bar"></span>
+                    <span id="bar"></span>
+                </figure>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/products/finder" class="navbar__links"> Productos </a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/carrito" class="navbar__links">Carro</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <section>
+                <a href="/" class="logo">
+                    <img src="/images/logo-sanitario.svg" alt="imagen">
+                </a>
+            </section>
+        </div>
+        <div class="navbar_right">
+            <form action="/products/finder" class="search-bar">
+                <input type="text" name="search" placeholder="marcas o productos">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <figure id="cart">
+                <a class="cart__container" href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            </figure>
+            <% if (!user) { %>
+
+                <li class="navbar__item">
+
+                    <a href="/users/register" class="navbar__links">Registro</a>
+
+                </li>
+                <li class="navbar__item">
+
+
+                    <a href="/users/login" class="navbar__links">Login</a>
+                </li>
+                <% } %>
+                    <% if (user && user.isAdmin) { %>
+                        <figure id="create">
+                            <a class="create" href="/products/create/details"><i class="fa-solid fa-circle-plus"></i>
+                            </a>
+                        </figure>
+                        <% } %>
+        </div>
+    </section>
+    <% if (user) { %>
+        <div id="userMenu">
+
+            <p>
+                <%=user.nombre %>
+            </p>
+            <figure id="userAvatar"><img src="/images/avatars/<%=user.image%>" alt=""></figure>
+
+            <form action="/users/logout" method="post" class="usuarioDesplegable">
+                <button class="buttonLogout" type="submit">Cerrar
+                    sesión</button>
+            </form>
+        </div>
+        <% } %>
+
+</header>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <%- include ('./includes/head.ejs') %>
+</head>
+
+    <body>
+
+        <%- include ('./includes/header.ejs') %>
+
+            <!-- break  -->
+            <main id="main">
+
+                <figure id="banner">
+                    <article id="carousel-container" class="carousel-container">
+                        <div class="mySlides animate">
+                          <img src="/images/banner.png" alt="slide" />
+                         
+                        </div>
+                        <div class="mySlides animate">
+                          <img src="/images/image 7.png" alt="slide" />     
+                        </div>
+                      
+                        <div class="mySlides animate">
+                          <img src="/images/3.png" alt="slide" />
+                        </div>
+                      
+                        <div class="mySlides animate">
+                          <img src="/images/Roca_5-tendencias-_en_azulejos_de_cocina_o_bano22_DEF_944x450.jpg" alt="slide" />
+                        </div>
+                      
+                        <div class="mySlides animate">
+                          <img src="/images/1.png" alt="slide" />
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+                      
+                        <!-- The dots/circles -->
+                        <div class="dots-container">
+                          <span class="dots" onclick="currentSlide(1)"></span>
+                          <span class="dots" onclick="currentSlide(2)"></span>
+                          <span class="dots" onclick="currentSlide(3)"></span>
+                          <span class="dots" onclick="currentSlide(4)"></span>
+                          <span class="dots" onclick="currentSlide(5)"></span>
+                        </div>
+                    </article>
+
+                   
+
+
+                </figure>
+                <section class="productos">
+                    <a href="/products/finder?categoria=baño" class="baño">
+                        <h3>Baño</h3>
+                        <img src="/images/productos/bidet1.jpeg" alt="baño">
+                    </a>
+                    <a href="/products/finder?categoria=cocina" class="cocina">
+                        <h3>Cocina</h3>
+                        <img src="/images/cocina.png" alt="foto cocina">
+                    </a>
+                    <a href="/products/finder?categoria=tanques" class="tanques">
+                        <h3>Tanques</h3>
+                        <img src="/images/termotanque.png" alt="foto tanques">
+                    </a>
+              <!--   <a href="/products/finder" class="calefaccion">
+                        <h3>Calefacción</h3>
+                        <img src="/images/calefaccion.png" alt="foto calefaccion">
+                    </a>
+                    <a href="/products/finder" class="instalaciones">
+                        <h3>Instalaciones</h3>
+                        <img src="/images/instalaciones.png" alt="foto instalaciones">
+                    </a> -->
+                </section>
+                <section class="marcas">
+                    <h2>Nuestras Marcas</h3>
+                        <ul>
+                            
+                            <li><a href="/products/finder"><img src="./images/marca-rotoplast.png" alt=""></a></li>
+                            <li><a href="/products/finder"><img src="./images/marca-roca.png" alt=""></a></li>
+                            <li><a href="/products/finder"><img src="./images/marca-waterplast.png" alt=""></a></li>
+                            <li><a href="/products/finder"><img src="./images/marca-rowa.png" alt=""></a></li>
+                            <li><a href="/products/finder"><img src="./images/marca-volcan.png" alt=""></a></li>
+                            <li><a href="/products/finder"><img src="./images/marca-pluvius.png" alt=""></a></li>
+                        </ul>
+                </section>
+                <section id="mapa">
+                    <figure class="img__map">
+                        <a href="https://www.google.com.ar/maps/place/Sanitarios+Nicuesa+%26+Hijos/@-34.4228489,-58.580677,17z/data=!3m1!4b1!4m5!3m4!1s0x95bca5bd0574b9cf:0x4085b5611c524623!8m2!3d-34.4228533!4d-58.5784883"
+                        target="_blank">
+                        <img src="/images/map.png" alt="map">
+                    </a>
+                </figure>
+                <text id="contacto">
+                    <h4>Contacto</h4>
+                    <h5>Av. Italia 1562, Tigre,
+                        Provincia de Buenos Aires, Argentina</h5>
+                        <h5>Tel: +54 11 56478371 </h5>
+                    </text>
+                    <text id="experiencia">
+                        <h4>Experiencia</h4>
+                        <h5>Más de 30 años de experiencia en el rubro respaldan nuestras operaciones</h5>
+                    </text>
+                    <section class="isla">
+                        <h2>Envíos a las islas del tigre</h2>
+                        <figure class="img__isla">
+                            <img src="/images/isla.png" alt="isla">
+                        </figure>
+                    </section>
+                </section>
+                
+            </main>
+
+            <%- include ('./includes/footer.ejs') %>
+
+                <script src="./scripts/menu.js"></script>
+                <script src="./scripts/carousel.js"></script>
+    </body>
+
+</html>

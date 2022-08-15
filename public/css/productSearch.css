@@ -1,0 +1,296 @@
+/*---------------MAIN-----------*/
+
+main h2 {
+    font-size: 1.5em;
+
+}
+
+main h3 {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+main h4 {
+    font-weight: normal;
+}
+
+main h6 {
+    display: inline-block;
+    font-weight: normal;
+}
+
+#main {
+    display: flex;
+    height: auto;
+    background: white;
+   
+}
+
+li {
+    list-style: none;
+}
+
+/*-----------NAVBAR-------------*/
+
+#buscador {
+    background-color: #ededed;
+    padding: 0 1em;
+    position: sticky;
+    min-height: 100vh;
+    *margin-top: 3.7em;
+    z-index: 20;
+    width: 150px;
+}
+
+#buscador h3 {
+    margin-top: 1em;
+    text-decoration: underline;
+}
+
+.buscador__categoriaRadio {
+    display: none
+}
+
+.buscador__categoriaRadio:checked+label {
+    background-color: var(--color-footerNav);
+}
+
+.buscador__categoriaRadio:checked+ul {
+    
+    display: block
+}
+
+.buscador__categoria {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.buscador__list a:hover {
+    background-color: var(--color-footerNav);
+    color: white;
+}
+
+
+.buscador__list {
+    display: none;
+    width: 100%;
+    padding-left: 1em;
+
+}
+
+
+.buscador__tipo {
+    font-weight: normal;
+    margin-left: 2em;
+    background-color: none;
+    margin-top: 5px;
+    display: none;
+   
+}
+
+
+.buscador__list a {
+    display: block;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: .8em;
+}
+
+.buscador__list a {
+    color: black;
+    width: 100%;
+    display: block;
+}
+
+.buscador__categoria a {
+    color: white;
+    font-size: .8em;
+    align-self: center;
+}
+
+.buscador__tipo:checked+label {
+    background-color: var(--color-footerNav);
+    color: white
+}
+
+.buscador__categoria {
+    font-size: .9em;
+    border-radius: 5px;
+    padding-left: 1em;
+    background-color: #A5A1A7;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: .25em;
+}
+
+.buscador__categoria:hover {
+    background-color: var(--color-footerNav);
+}
+
+
+.grupo {
+    margin-top: 1em;
+}
+
+
+/*---------------CONTENT-----------*/
+
+.ruta__texto--resaltado {
+    font-weight: bold;
+}
+
+#ruta {
+    margin: .5em 0;
+}
+
+/*-----------PRODUCTO BOX-------------*/
+
+#reiniciar {
+    color: black;
+    font-size: .7em;
+    padding-top: -1em;
+    display: block;
+    margin-top: 1em;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.Cancelar {
+    margin-top: 20px;
+    align-content: center;
+    background-color: var(--color-footerNav);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    box-shadow: 0px 1px 6px -1px rgb(0 0 0 / 75%);
+}
+
+.productos {
+    display: grid;
+    gap: 3em 3em;
+    *grid-auto-rows: 15em;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    justify-items: center;
+
+}
+
+
+.articulos {
+    padding: 1em 2em;
+    margin-bottom: 2em;
+    width: 100%;
+
+}
+
+
+.productos__elemento {
+    max-width: 45%;
+    min-width: 280px;
+    min-height: 40%;
+    background-color: #EDEDED;
+    padding: 1em;
+    border-radius: 1em;
+    transition: all 200ms ease-in;
+
+}
+
+.productos__elemento:hover {
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 65%);
+
+
+}
+
+
+.productos__informacion {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.imagen {
+    border: var(--color-grey) solid .1em;
+    border-radius: 1.5em;
+    height: 150px;
+    display: flex;
+    min-width: 150px;
+    background-color: white;
+    margin: 1em auto;
+    
+}
+
+img {
+    height: 75%;
+    margin: auto;
+    display: inline-block;
+    align-self: center;
+
+}
+
+.productos__texto {
+    justify-self: flex-end;
+    align-items: space-between;
+    position: relative
+}
+
+
+.productos__modelos {
+    align-self: flex-end;
+    background-color: #c4c2c5;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -13px;
+    right: -13px;
+    color: var(--color-font);
+}
+
+.productos__elemento h3 {
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.productos__elemento .descripcion {
+
+    opacity: 0;
+    transition: all 200ms ease-in;
+}
+
+.productos__elemento:hover .descripcion {
+   
+    opacity: 1;
+}
+
+.marca {
+    font-weight: 600;
+}
+
+.precio {
+    opacity: 50%;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    height:100%;
+}
+
+.linea {
+    font-weight: normal;
+    color: black;
+    opacity: 75%;
+}

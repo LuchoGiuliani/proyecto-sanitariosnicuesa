@@ -1,0 +1,384 @@
+/*-------------HEADER BOX-------------*/
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 2em;
+    background: rgb(38, 68, 83);
+    background: linear-gradient(145deg, rgba(38, 68, 83, 1) 0%, rgba(78, 138, 167, 1) 100%);
+    gap: 1.5em;
+    min-height: 74px;
+    max-height: 74px;
+    *position: fixed;
+    width: 100%;
+}
+
+#headerContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background: rgb(38, 68, 83); */
+    /* background: linear-gradient(145deg, rgba(38, 68, 83, 1) 0%, rgba(78, 138, 167, 1) 100%); */
+    gap: 1em;
+    min-height: 74px;
+    max-height: 74px;
+    *position: fixed;
+    width: 100%;
+}
+
+/*-------------NAV left-------------*/
+.navbar_left {
+    display: flex;
+    align-items: center;
+}
+
+
+/*-------------NAV right-------------*/
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+}
+
+
+/*-------------NAV CONTAINER-------------*/
+.navbar__toggle {
+    top: 20px
+}
+
+/*-------------BUSCADOR-------------*/
+
+.search-bar {
+    width: auto;
+    max-width: 700px;
+    background: rgba(78, 138, 167, 1);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    height: 35px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 2;
+    border: 0;
+    outline: none;
+    padding: 0px 4px;
+    font-size: 17px;
+    color: var(--color-white);
+    width: 100%;
+    font-style: italic;
+}
+
+::placeholder {
+    color: var(--color-white);
+
+}
+
+.search-bar button img {
+    width: 17px;
+
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    background: #4f839b;
+    cursor: pointer;
+    padding: .5em;
+    aspect-ratio: 1/1;
+    margin-right: -22px;
+}
+
+@media (max-width: 508px) {
+    .search-bar {
+        display: none;
+    }
+
+}
+
+#busqueda {
+    display: flex;
+    height: 1.5em;
+    padding: 0 1em;
+    color: #666;
+    background-color: var(--color-white);
+    width: 0px;
+    border-radius: 1em;
+    justify-content: flex-end;
+    gap: .75em;
+    align-items: center;
+    flex-grow: 1.1;
+    min-width: 100px;
+    max-width: 320px;
+
+}
+
+#busqueda form {
+    width: 100%;
+}
+
+#busqueda input {
+    width: 100%;
+}
+
+.search-bar i {
+    color: var(--color-white);
+}
+
+.search-bar i:hover {
+    color: var(--color-hover);
+}
+
+/*-------------BOTON CREAR-------------*/
+.create {
+    color: var(--color-white);
+}
+
+.create:hover {
+    color: var(--color-hover);
+}
+
+/*-------------CARRO-------------*/
+#cart {
+
+    right: 2em;
+    border-radius: 50%;
+    margin: 2px;
+    padding: 0.5rem;
+    display: flex;
+    width: 2.5em;
+    aspect-ratio: 1/1;
+}
+
+.cart__container {
+    color: var(--color-white);
+    margin: auto;
+}
+
+.cart__container:hover {
+    color: var(--color-hover);
+}
+
+@media (max-width: 617px) {
+    #cart {
+        display: none;
+    }
+}
+
+/*-------------logo-------------*/
+.logo img {
+    width: 260px;
+    min-width: 260px;
+    margin-top: 10px;
+}
+
+header a h2 {
+    color: var(--color-white);
+    font-weight: 600;
+
+}
+
+
+
+/*-------------prueba desplegable-------------*/
+#navbar {
+    background: var(--color-footerNav);
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    flex-wrap: nowrap;
+
+}
+
+.navbar__menu a {
+    font-size: 0.5em;
+}
+
+.navbar__item {
+    height: 56px;
+    width: 100%;
+}
+
+.navbar__links {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* padding: 0 1rem; */
+    height: 100%;
+}
+
+
+
+
+.navbar__links:hover {
+    color: var(--color-hover);
+    transition: all 0.3s ease;
+}
+
+/*-------------DESPLEGABLE MEDIA QUERY-------------*/
+
+
+@media (max-width: 580px) {
+    .navbar__menu {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+@media screen and (max-width: 2440px) {
+
+    .navbar__menu {
+        *display: grid;
+        *grid-template-columns: auto;
+        margin: -25px;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        *transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: var(--color-white);
+    }
+
+    .navbar__menu.active {
+        background: linear-gradient(20deg, rgba(38, 68, 83, 1) 30%, rgb(67, 105, 126) 100%);
+        top: 61px;
+        opacity: 1;
+        transition: all 0.3s ease;
+        z-index: 99;
+        height: auto;
+        width: auto;
+        font-size: 1.6rem;
+        border-radius: 0 0 1em 1em;
+        left: 15px;
+    }
+
+    .navbar__toggle #bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: var(--color-white);
+    }
+
+
+
+    .navbar__links {
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        display: table;
+    }
+
+
+    .navbar__toggle #bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active #bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active #bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active #bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/*-------------CREAR HOVER-------------*/
+
+.carga i:hover {
+    color: var(--color-hover);
+
+}
+
+/*-------------menu de usuario logeado-------------*/
+#userMenu {
+    display: flex;
+    gap: .5em;
+    color: white;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 125px;
+    height: 2em;
+    transition: all 2s ease;
+}
+
+#userAvatar {
+    width: 1.5em;
+    display: grid;
+    place-items: center;
+}
+
+#userAvatar img {
+    width: 100%;
+}
+
+
+
+.usuarioDesplegable {
+    display: none;
+    /* position: absolute; */
+    bottom: -2em;
+    width: 100%;
+    /* background-color: yellow; */
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2); */
+    /* padding: 12px 16px; */
+    z-index: 10;
+}
+
+.usuarioDesplegable button{
+    width: 100%;
+    height: 2em;
+    border-radius: .5em;
+}
+
+#userMenu:hover .usuarioDesplegable {
+    display: block;
+    
+}
+
+#userMenu i {
+    rotate: -90deg;
+    transition: all 0.1s ease-out;
+}
+
+#userMenu:hover i {
+    rotate: 0deg
+}
+
+.buttonLogout{
+    color: var(--color-white);
+    background-color: var(--color-footerNav);
+}

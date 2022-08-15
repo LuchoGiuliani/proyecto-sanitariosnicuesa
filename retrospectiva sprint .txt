@@ -1,0 +1,83 @@
+Sprint 1:
+---------------
+
+Comenzar a hacer: comunicarnos mejor para distribuir tareas
+
+
+Hacer mas: Reuniones periodicas
+
+
+Continuar haciendo: Avanzar un poco cada dia
+
+
+Hacer menos: en cuanto a diseño: menos es mas, no hace falta poner tanta informacion en la pagina porque puede confundir al usuario
+
+
+Dejar de hacer: Esperar a que el otro tome iniciativa
+
+Sprint 2
+------------
+Comenzar a hacer: Daily/weekly report.
+
+
+Hacer mas: Distribuir tareas. Uso del tablero de trabajo. Pensar bien el motivo de uso de etiquetas, atributos o metodos.
+
+
+Continuar haciendo: Ayudandonos en las diferentes tareas asignadas.
+
+
+Hacer menos: Hacer tareas que esten por fuera de los objetivos del sprint antes de terminar el sprint.
+
+
+Dejar de hacer: Dejar para ultimo momento
+
+
+
+Sprint 3
+------------
+Comenzar a hacer: Laburar con mas tiempo,
+
+
+Hacer mas: Planificacion de entregas, dividir mejor las tareas, poner plazos de entrega.
+
+
+Continuar haciendo: Comunicarnos a diario, ayudarnos entre si para lograr cumplir con las tareas.
+
+
+Hacer menos: No chequear las fechas de entrega del sprint,
+
+
+Dejar de hacer: Dejar de agregar cosas externas
+
+
+Sprint 4
+------------
+Comenzar a hacer: Programar alguna tarea todos juntos.
+
+
+Hacer mas: Comunicarnos.
+
+
+Continuar haciendo: Ayudarnos mutuamente.
+
+
+Hacer menos: Trabajar solos.
+
+
+Dejar de hacer: Hacer push y pull mas seguido.
+
+Sprint 5
+------------
+Comenzar a hacer: Programar alguna tarea todos juntos, Anotar las dudas y las tareas que se nos presentan para no olvidarlas.
+
+
+Hacer mas: Buscar nueva documentacion/subdividir tareas/ mas push y pull.
+
+
+Continuar haciendo: Ayudarnos mutuamente.
+
+
+Hacer menos: Trabajar solos.
+
+
+Dejar de hacer: Acumular dudas y no buscar una solucion con los compañeros

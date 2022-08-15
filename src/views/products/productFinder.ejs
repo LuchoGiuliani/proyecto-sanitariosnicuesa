@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../includes/head.ejs') %>
+</head>
+
+<body>
+
+    <%- include ('../includes/header.ejs') %>
+
+        <!-- break  -->
+        <main>
+            <!--  <h2 id="desplegable" tabindex="9999"> - filtrar categorias - </h2> -->
+            <!-- <nav id="buscador__navbarDesplegable">
+                <h2>Categorias</h2>
+                <ul>
+                    <li class="buscador__categoria">
+                        <h3>Baño</h3>
+                        <ul>
+                            <li class="buscador__tipo">Bidet</li>
+                            <li class="buscador__tipo">Inodoro</li>
+                            <li class="buscador__tipo">Griferia</li>
+                            <li class="buscador__tipo">Piletas</li>
+                            <li class="buscador__tipo">Ducha</li>
+                        </ul>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>Cocina</h3>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>Tanques</h3>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>Calefaccion</h3>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>Instaladores</h3>
+                    </li>
+                </ul>
+                <br>
+                <h2>Marcas</h2>
+                <ul>
+                    <li class="buscador__categoria">
+                        <h3>Roca</h3>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>FV</h3>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>Capea</h3>
+                    </li>
+                    <li class="buscador__categoria">
+                        <h3>Rotoplast</h3>
+                    </li>
+                </ul>
+            </nav> -->
+            <section id="main">
+                <form id="buscador">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <label for="banio" class="buscador__categoria">Baño<a href="/products/finder?categoria=baño"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a></label>
+                        <input type="radio" name="categorias" valor="banio" id="banio" class="buscador__categoriaRadio">
+                        <ul class="buscador__list buscador">
+                            <input type="radio" name="subcategoria" value="bidet" id="b1"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=bidet">Bidet</a>
+                            <input type="radio" name="subcategoria" value="inodoro" id="b2"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=inodoro">Inodoro</label></a>
+                            <input type="radio" name="subcategoria" value="griferia" id="b3"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=griferia">Griferia</a>
+                            <input type="radio" name="subcategoria" value="piletas" id="b4"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=piletas">Piletas</a>
+                            <input type="radio" name="subcategoria" value="ducha" id="b5"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=ducha">Ducha</a>
+                        </ul>
+
+                        <label for="cocina" class="buscador__categoria">Cocina<a href="/products/finder?categoria=cocina"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a></label>
+                        <input type="radio" name="categorias" valor="cocina" id="cocina"
+                            class="buscador__categoriaRadio">
+                        <ul class="buscador__list">
+                            <input type="radio" name="subcategoria" value="bachas" id="c1"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=bacha">Bachas</a>
+                            <input type="radio" name="subcategoria" value="hornos" id="c2"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=horno">Hornos</a>
+                            <input type="radio" name="subcategoria" value="griferia" id="c3"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=griferiaCocina">Griferia</a>
+                        </ul>
+
+                        <label for="tanques" class="buscador__categoria">Tanques<a href="/products/finder?categoria=tanques"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a></label>
+                        <input type="radio" name="categorias" valor="tanque" id="tanques"
+                            class="buscador__categoriaRadio">
+                        <ul class="buscador__list">
+                            <input type="radio" value="termotanques" name="subcategoria" id="t1"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=termotanques">Termotanques</a>
+                            <input type="radio" name="subcategoria" id="t2" name="subcategoria"
+                                class="buscador__tipo"></input>
+                            <a href="/products/finder?subcategoria=tanquesDeAgua">Tanques de Agua</a>
+                        </ul>
+
+                        <button type="reset" class="Cancelar"><a href="/products/finder" id="reiniciar">Reiniciar
+                                Busqueda</a></button>
+                        <!--    <label for="calefaccion" class="buscador__categoria">Calefaccion</label>
+                        <input type="radio" name="categorias" valor="calefaccion" id="calefaccion"
+                            class="buscador__categoriaRadio">
+                        <ul class="buscador__list">
+                            <input type="radio" name="subcategoria" id="ca1" class="buscador__tipo"></input>
+                            <label for="ca1">Salamandra</label>
+                            <input type="radio" name="subcategoria" id="ca2" class="buscador__tipo"></input>
+                            <label for="ca2">Caloventores</label>
+                            <input type="radio" name="subcategoria" id="ca3" class="buscador__tipo"></input>
+                            <label for="ca3">Aires Acondicionados</label>
+                        </ul>-->
+
+                        <!--   <label for="instalaciones" class="buscador__categoria">Instalaciones</label>
+                        <input type="radio" name="categorias" valor="instalaciones" id="instalaciones"
+                            class="buscador__categoriaRadio">
+                        <ul class="buscador__list">
+                            <input type="radio" name="subcategoria" id="i1" class="buscador__tipo"></input>
+                            <label for="i1">Tubos</label>
+                            <input type="radio" name="subcategoria" id="i2" class="buscador__tipo"></input>
+                            <label for="i2">Cintas</label>
+                            <input type="radio" name="subcategoria" id="i3" class="buscador__tipo"></input>
+                            <label for="i3">Adhesivos</label>
+                        </ul>-->
+
+                    </ul>
+                    <!-- <h3>Marcas</h3>
+                    <ul>
+                        <label for="roca" class="buscador__categoria">Roca</label>
+                        <input type="radio" name="categorias" id="roca" class="buscador__categoriaRadio">
+                        <label for="fv" class="buscador__categoria">Fv</label>
+                        <input type="radio" name="categorias" id="fv" class="buscador__categoriaRadio">
+                        <label for="capea" class="buscador__categoria">Capea</label>
+                        <input type="radio" name="categorias" id="capea" class="buscador__categoriaRadio">
+                        <label for="rotoplast" class="buscador__categoria">Rotoplast</label>
+                        <input type="radio" name="categorias" id="rotoplast" class="buscador__categoriaRadio">
+                    </ul> -->
+                </form>
+                <section class="articulos">
+                    <div id="ruta">
+                        <!--  <h6 class="texto">productos - baño - griferia -</h6> 
+                        <h6 class="ruta__texto ruta__texto--resaltado"> H3 Urbano</h6>-->
+                    </div>
+                    <section class="productos">
+
+                        <% products.forEach(element=> { %>
+                            <article class="productos__elemento"><a class="link" href="/products/<%= element.id %> ">
+                                    <h3>
+                                        <%= element.name %>
+                                    </h3>
+                                    <div class="productos__informacion">
+                                        <picture class="imagen"><img src="/images/productos/<%= element.imagen %>"
+                                                alt=""></picture>
+                                        <div class="productos__texto">
+                                            <h4 class="descripcion">
+                                                <%= element.details.description %>
+                                            </h4>
+                                            <h4 class="marca">
+                                                <%= element.marca %>
+                                            </h4>
+                                            <h5 class="linea">
+                                                <%= element.information.linea %>
+                                            </h5>
+                                            <h4 class="precio">
+                                                $<%= element.price %>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </a> </article>
+                            <% }) %>
+
+                    </section>
+                </section>
+            </section>
+        </main>
+        <!-- break -->
+        <%- include ('../includes/footer.ejs') %>
+
+            <script src="../../scripts/menu.js"></script>
+</body>
+
+</html>

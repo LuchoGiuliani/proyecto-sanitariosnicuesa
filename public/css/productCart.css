@@ -1,0 +1,277 @@
+/*---------------MAIN -----------*/
+main {
+    padding: 1em 1.5em
+}
+
+main h6 {
+    display: inline-block;
+    font-weight: normal;
+}
+main h5,
+main h3 {
+    font-weight: normal;
+}
+main a {
+    font-size: 1em;
+}
+
+
+#pagina__titulo {
+    width: 100%;
+    margin: .5em 0;
+    text-align: left;
+}
+
+.--bold {
+    font-weight: bold;
+    color: black;
+}
+
+/*---------------RUTA -----------*/
+
+.ruta__texto--resaltado {
+    font-weight: bold;
+}
+
+/*---------------ARTICULO-----------*/
+
+#articulo__titulo {
+    font-weight: bold;
+}
+
+.precio {
+    color: #A5A1A7;
+}
+
+.menos,
+.mas {
+    color: #A5A1A7;
+}
+
+
+.quitar i {
+    font-size: 1em;
+    color: black;
+}
+
+/*  */
+#pagina {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#productos {
+    width: 49%;
+    background-color: #A5A1A7;
+    padding: 1em;
+    border-radius: 1.5em;
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.productos__articulo {
+    background-color: #EDEDED;
+    padding: 1em;
+    border-radius: 1em;
+    position: relative;
+}
+
+.articulo__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.articulo__imagen {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.articulo__imagen img {
+    width: 100%;
+    margin: auto;
+}
+
+.articulo__informacion {
+    width: 50%;
+    flex-grow: 2;
+}
+
+.articulo__cantidad {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: .2em 1em;
+    margin: 0 0 .5em 0;
+    border-radius: .5em;
+    max-width: 150px;
+}
+
+
+.quitar {
+    background-color: #A5A1A7;
+    width: 2em;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    border-radius: 50%;
+}
+
+.articulo__cantidadBoton {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* seccion compra */
+
+#compra {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+/* compra__envio */
+
+#compra__form {
+    width: 100%;
+}
+
+.compra__titulo {
+    width: 100%;
+}
+
+#compra__envio {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EDEDED;
+    padding: 1em;
+    border-radius: 1.5em;
+    width: 100%;
+}
+
+#compra__envio label {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.compra__datosEnvio {
+    width: 100%;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+#compra__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#compra__opcionesEnvio {
+    margin-bottom: 1em;
+}
+
+form {
+    padding: 1em 0;
+
+}
+
+#compra__datosEnvio {
+    width: 50%;
+    text-align: center;
+    color: var(--color-footerNav);
+    justify-content: center;
+}
+
+.codigoPostal {
+    width: 50%;
+}
+
+#compra__cp {
+    display: flex;
+    align-items: center;
+}
+
+#compra__cp label {
+    width: 50%;
+    margin: 5px 0
+}
+
+/* #compra__cp .input {
+    width: 50%;
+} */
+
+
+#compra__form h3 {
+    min-width: 150px;
+}
+
+form div label {
+    display: flex;
+    align-items: center;
+}
+
+input[type=radio] {
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em;
+    -webkit-appearance: none;
+    background-color: #A5A1A7;
+    width: 1em;
+    height: 1em;
+}
+
+input[type=radio]:checked {
+    background-color: #3A687E;
+    background-size: 2px;
+    background-position: center;
+}
+
+.compra__envioValor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #A5A1A7;
+    padding-bottom: .75em;
+}
+
+#compra__envioValorTotal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: .75em;
+    flex-wrap: wrap;
+}
+
+/* break */
+
+#compra__pago {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EDEDED;
+    padding: 1em;
+    border-radius: 1.5em;
+    justify-content: center;
+}
+
+.pago__texto {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#compra__pago img {
+    border-radius: 1em;
+    width: 100%;
+    box-shadow: 0 2px 7px #A5A1A7;
+    justify-self: center;
+}

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "1",
+    "name": "H3 Urbano - Juego para lavatorio",
+    "price": 20000,
+    "imagen": "griferia1.jpg",
+    "categoria": "baño",
+    "subCategoria": "griferia",
+    "marca": "FV",
+    "information": {
+      "colores": "Cromo, Rose Gold",
+      "linea": "H3 Urbano",
+      "configuracion": "Bicomando",
+      "apto": "Apto termotanque y calefón",
+      "tecnologia": "Cierre cerámico"
+    },
+    "details": {
+      "description": "Griferia de baño moderna de linea H3"
+    }
+  },
+  {
+    "id": "2",
+    "name": "49 Alesia - Juego para baño",
+    "price": 50000,
+    "imagen": "imagenProducto-1658498830737-653353038.jpg",
+    "categoria": "baño      ",
+    "subCategoria": "griferia",
+    "marca": "FV",
+    "information": {
+      "colores": "Cromo",
+      "linea": "49 Alesia",
+      "configuracion": "Bicomando",
+      "apto": "Apto termotanque y calefón",
+      "tecnologia": "Cierre cerámico",
+      "medidas": "",
+      "capacidad": ""
+    },
+    "details": {
+      "description": "Griferia de baño moderna de linea H3"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Inodoro largo RIMLESS de pie con salida dual",
+    "price": 20000,
+    "imagen": "inodoro1.jpeg",
+    "categoria": "baño",
+    "subCategoria": "inodoro",
+    "marca": "Roca",
+    "information": {
+      "colores": "Blanco",
+      "mochila": "Con mochila",
+      "tecnologia": "Arrastre",
+      "linea": "The Gap",
+      "disenio": "Cuadrado",
+      "configuracion": "De pie"
+    },
+    "details": {
+      "description": "Inodoro cuadrado elegante linea The Gap",
+      "esquema": "/images/griferia_esquema.png",
+      "documento": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "4",
+    "name": "Bidé de pie Monobloque",
+    "price": 50000,
+    "imagen": "bidet1.jpeg",
+    "categoria": "baño",
+    "subCategoria": "bidet",
+    "marca": "Roca",
+    "information": {
+      "colores": "Blanco",
+      "linea": "The Gap",
+      "configuracion": "De pie",
+      "apto": "",
+      "tecnologia": "Griferia monocomando"
+    },
+    "details": {
+      "description": "Bidet elegante con griferia monocomando",
+      "documento": ""
+    }
+  },
+  {
+    "id": 6,
+    "name": "Rociador de pared",
+    "price": 12900,
+    "imagen": "imagenProducto-1658499591244-941992503.jpeg",
+    "categoria": "baño",
+    "subCategoria": "ducha",
+    "marca": "FV",
+    "information": {
+      "colores": "cromado",
+      "linea": "",
+      "diseño": "circular",
+      "configuracion": "pared o techo",
+      "apto": ""
+    },
+    "details": {}
+  },
+  {
+    "id": 7,
+    "name": "H3 Urbano - Juego para bañera y ducha",
+    "price": 27800,
+    "imagen": "imagenProducto-1658499783034-820531822.jpg",
+    "categoria": "baño",
+    "subCategoria": "ducha",
+    "marca": "FVSA",
+    "information": {
+      "colores": "Cromo y Rose Gold",
+      "linea": "H3 Urbano",
+      "diseño": "volante cruz",
+      "configuracion": "pared o techo",
+      "apto": "calefon y termotanque"
+    },
+    "details": {
+      "description": "Juego para bañera y ducha, de dos llaves y transferencia, con ducha."
+    }
+  },
+  {
+    "id": 8,
+    "name": "Bidé de pie",
+    "price": 36299,
+    "imagen": "imagenProducto-1658500218537-653767791.jpeg",
+    "categoria": "baño",
+    "subCategoria": "bidet",
+    "marca": "Roca",
+    "information": {
+      "colores": "Blanco",
+      "linea": "",
+      "configuracion": "De pie",
+      "apto": "",
+      "tecnologia": ""
+    },
+    "details": {
+      "description": " Bidé de pie lluvia con 1 orificio"
+    }
+  },
+  {
+    "id": 9,
+    "name": "In-Wash",
+    "price": 37900,
+    "imagen": "imagenProducto-1658500356459-278299699.jpeg",
+    "categoria": "baño",
+    "subCategoria": "inodoro",
+    "marca": "Roca",
+    "information": {
+      "colores": "Blanco",
+      "linea": "Smart",
+      "diseño": "Cuadrado elegante",
+      "configuracion": "de pie, salida dual",
+      "apto": ""
+    },
+    "details": {
+      "description": " Smart toilet adosado a pared con salida dual."
+    }
+  },
+  {
+    "id": 10,
+    "name": "Pileta de cocina doble Johnson",
+    "price": 63500,
+    "imagen": "imagenProducto-1658500545007-846056605.webp",
+    "categoria": "cocina",
+    "subCategoria": "bacha",
+    "marca": "Johnson Acero",
+    "information": {
+      "colores": "pulido standard",
+      "linea": "Quadra Q76 A",
+      "diseño": "",
+      "configuracion": "bacha doble",
+      "apto": "sobre mesada"
+    },
+    "details": {
+      "description": " "
+    }
+  },
+  {
+    "id": 11,
+    "name": "Pileta Bacha Acero Inoxidable Johnson",
+    "price": 10500,
+    "imagen": "imagenProducto-1658500647323-916381904.webp",
+    "categoria": "cocina",
+    "subCategoria": "bacha",
+    "marca": "Johnson ",
+    "information": {
+      "colores": "acero cepillado",
+      "linea": "ZZ 52/18",
+      "configuracion": "bacha doble",
+      "apto": "sobre mesada",
+      "tecnologia": ""
+    },
+    "details": {
+      "description": " Pileta Bacha Acero Inoxidable Johnson Zz52/18 Cocina"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Candor S2",
+    "price": 35000,
+    "imagen": "imagenProducto-1658500908926-501784688.webp",
+    "categoria": "cocina",
+    "subCategoria": "horno",
+    "marca": "Escorial",
+    "information": {
+      "colores": "Blanco y negro",
+      "linea": "Candor",
+      "diseño": "",
+      "configuracion": "con chispero electrico",
+      "apto": "gas envasado"
+    },
+    "details": {
+      "description": " Cocina Escorial Candor S2 gas envasado 4 hornallas blanca 220V puerta con visor",
+      "medidas": "60cm x 62cm x 47cm"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Grifo de cocina monocomando Emblem 10016",
+    "price": 20000,
+    "imagen": "imagenProducto-1658501101970-824151628.webp",
+    "categoria": "cocina",
+    "subCategoria": "griferiaCocina",
+    "marca": "Piazza",
+    "information": {
+      "colores": "cromado, negro, blanco, azul, dorado, rosa",
+      "linea": "Emblem 10016",
+      "diseño": "flexible ",
+      "configuracion": "monocomando",
+      "apto": ""
+    },
+    "details": {
+      "description": "Grifo de cocina monocomando Piazza Emblem 10016 negro acabado cromado",
+      "medidas": ""
+    }
+  },
+  {
+    "id": 16,
+    "name": "Tanque rotoplast ",
+    "price": 27500,
+    "imagen": "imagenProducto-1658501527584-245310318.webp",
+    "categoria": "tanques",
+    "subCategoria": "tanquesDeAgua",
+    "marca": "Rotoplast",
+    "information": {
+      "colores": "veige",
+      "linea": "Cuatricapa",
+      "diseño": "",
+      "configuracion": "vertical",
+      "apto": "",
+      "capacidad": "600L"
+    },
+    "details": {
+      "description": " Tanque de agua Rotoplas Cuatricapa vertical polietileno 600L",
+      "medidas": "112cm x 97cm"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Termotanque multigas Heineken",
+    "price": 35200,
+    "imagen": "imagenProducto-1658501696617-773883402.webp",
+    "categoria": "tanques",
+    "subCategoria": "termotanques",
+    "marca": "Heineken",
+    "information": {
+      "colores": "blanco",
+      "linea": "AP 80",
+      "diseño": "",
+      "configuracion": "vertical de interiores, para apoyar, conexion de agua superior",
+      "apto": "multi gas",
+      "capacidad": "80L"
+    },
+    "details": {
+      "description": " Termotanque multigas Heineken ADN AP-80 blanco 80L",
+      "medidas": "108cm x 41cm de diamtro"
+    }
+  },
+  {
+    "id": 18,
+    "name": " Lavatorio de FINECERAMIC",
+    "price": 74230,
+    "imagen": "imagenProducto-1658505445429-373025578.jpeg",
+    "categoria": "baño",
+    "subCategoria": "lavatorio",
+    "marca": "Roca",
+    "information": {
+      "colores": "blanco",
+      "linea": "SOFT",
+      "modelo": "",
+      "diseño": "",
+      "configuracion": "sobre encimera",
+      "apto": "",
+      "medidas": "500 x 370 x 140 mm",
+      "capacidad": "18L"
+    },
+    "details": {
+      "description": " SOFT - Lavatorio de FINECERAMIC® de sobre encimera"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Lavatorio de FINECERAMIC",
+    "price": 54600,
+    "imagen": "imagenProducto-1658505620349-157315177.jpg",
+    "categoria": "baño",
+    "subCategoria": "lavatorio",
+    "marca": "Roca",
+    "information": {
+      "colores": "blanco ceramica",
+      "linea": "Fineceramic",
+      "modelo": "",
+      "diseño": "Cuadrado elegante",
+      "configuracion": "sobre mueble y suspendido",
+      "apto": "",
+      "medidas": "1000 x 490 x 120 mm",
+      "capacidad": "14L"
+    },
+    "details": {
+      "description": " Lavatorio de FINECERAMIC® mural o sobre encimera"
+    }
+  },
+  {
+    "id": 20,
+    "name": "asdf",
+    "price": 123,
+    "imagen": "imagenProducto-1660003500774-639942641.jpg",
+    "categoria": "cocina",
+    "subCategoria": "horno",
+    "marca": "asdf",
+    "information": {
+      "colores": "",
+      "linea": "",
+      "modelo": "",
+      "diseño": "",
+      "configuracion": "",
+      "apto": "",
+      "medidas": "",
+      "capacidad": ""
+    },
+    "details": {}
+  }
+]
